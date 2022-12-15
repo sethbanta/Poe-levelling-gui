@@ -82,13 +82,46 @@ class mainMenu(QMainWindow): #page 1
     button10.move(((mainMenuWidget.width() // 2) + (mainMenuWidget.width() // 14) - 66),(mainMenuWidget.height() // 10) + 200)
 
 class actOneMenu(QMainWindow):
+    #Set the widget up
     actOneWidget.setWindowTitle("Poe quest GUI")
     actOneWidget.setGeometry(0, 0, 800, 600)
+    #Add the title and position it
     title = QLabel("<h1>Act One</h1>", parent=actOneWidget)
+    title.adjustSize()
+    title.move(((mainMenuWidget.width() // 2) - (mainMenuWidget.width() // 9) - 20),0)
+    #Begin adding each quest
+    twilightStrand = QLabel("<b>01.</b> Find and kill Hillock", parent=actOneWidget)
+    twilightStrand.move(0, 20)
+    coast = QLabel("<b>02.</b> Find the Mud Flats", parent=actOneWidget)
+    coast.move(0,35)
+    mudFlats = QLabel("<b>03.</b> Find all three Glyphs then open the Submerged Passage", parent=actOneWidget)
+    mudFlats.move(0,50)
+    submergedPassage = QLabel("<b>04.</b> Find the Ledge", parent=actOneWidget)
+    submergedPassage.move(0,65)
+    ledge = QLabel("<b>05.</b> Find the climb", parent=actOneWidget)
+    ledge.move(0,80)
+    climb = QLabel("<b>06.</b> Find the Lower Prison", parent=actOneWidget)
+    climb.move(0,95)
+    lowerPrison = QLabel("<b>07.</b> Find the Upper Prison", parent=actOneWidget)
+    lowerPrison.move(0,110)
+    upperPrison = QLabel("<b>08.</b> Find the Wardens Chambers", parent=actOneWidget)
+    upperPrison.move(0,125)
+    wardensChambers = QLabel("<b>09.</b> Kill Brutus", parent=actOneWidget)
+    wardensChambers.move(0,140)
+    prisonersGate = QLabel("<b>10.</b> Find the Ship Graveyard", parent=actOneWidget)
+    prisonersGate.move(0,155)
+    shipGraveyard = QLabel("<b>11.</b> Find the Cavern of Wrath", parent=actOneWidget)
+    shipGraveyard.move(0,170)
+    cavernWrath = QLabel("<b>12. </b> Find the Cavern of Anger", parent=actOneWidget)
+    cavernWrath.move(0,185)
+    cavernAnger = QLabel("<b>13.</b> Find Merveil, the Siren", parent=actOneWidget)
+    cavernAnger.move(0,200)
+    killMerv = QLabel("<b>14.</b> Kill Merveil, the Siren", parent=actOneWidget)
+    killMerv.move(0,215)
     
-
+    
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
-window.setCurrentWidget(mainMenuWidget)
+window.setCurrentWidget(actOneWidget)
 #Show the window
 sys.exit(app.exec())
