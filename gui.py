@@ -6,70 +6,89 @@ import sys
 
 #Create instance of QApplication
 app = QApplication([])
+#Create widgets for each button
+mainMenuWidget = QWidget()
+actOneWidget = QWidget()
+actTwoWidget = QWidget()
+actThreeWidget = QWidget()
+actFourWidget = QWidget()
+actFiveWidget = QWidget()
+actSixWidget = QWidget()
+actSevenWidget = QWidget()
+actEightWidget = QWidget()
+actNineWidget = QWidget()
+actTenWidget = QWidget()
 #Create GUI
-window = QStackedWidget()
-window.setWindowTitle("Poe quest GUI")
+window = QStackedLayout()
+mainMenuWidget.setWindowTitle("Poe quest GUI")
 #Place it somewhere on the screen
-window.setGeometry(0, 0, 800, 600)
+mainMenuWidget.setGeometry(0, 0, 800, 600)
 
 class mainMenu(QMainWindow): #page 1
     #Create a label to fill in the window
-    helloMsg = QLabel("<h1>Hello, world!</h1>", parent=window)
+    helloMsg = QLabel("<h1>Hello, world!</h1>", parent=mainMenuWidget)
     helloMsg.adjustSize() #this is needed for the label to not get cut off
     #Place the message in a specific area of the window, used some weird math to make it look relatively centered
-    helloMsg.move(((window.width() // 2) - (window.width() // 9) - 20),0)
+    helloMsg.move(((mainMenuWidget.width() // 2) - (mainMenuWidget.width() // 9) - 20),0)
 
     #Create act one button
-    button1 = QPushButton(window)
+    button1 = QPushButton(mainMenuWidget)
     button1.setText("Act One")
-    button1.move(((window.width() // 2) - (window.width() // 9) - 66),(window.height() // 10))
+    button1.move(((mainMenuWidget.width() // 2) - (mainMenuWidget.width() // 9) - 66),(mainMenuWidget.height() // 10))
 
     #Create act two button
-    button2 = QPushButton(window)
+    button2 = QPushButton(mainMenuWidget)
     button2.setText("Act Two")
-    button2.move(((window.width() // 2) + (window.width() // 14) - 66),(window.height() // 10))
+    button2.move(((mainMenuWidget.width() // 2) + (mainMenuWidget.width() // 14) - 66),(mainMenuWidget.height() // 10))
 
     #Create act three button
-    button3 = QPushButton(window)
+    button3 = QPushButton(mainMenuWidget)
     button3.setText("Act Three")
-    button3.move(((window.width() // 2) - (window.width() // 9) - 66),(window.height() // 10) + 50)
+    button3.move(((mainMenuWidget.width() // 2) - (mainMenuWidget.width() // 9) - 66),(mainMenuWidget.height() // 10) + 50)
 
     #Create act four button
-    button4 = QPushButton(window)
+    button4 = QPushButton(mainMenuWidget)
     button4.setText("Act Four")
-    button4.move(((window.width() // 2) + (window.width() // 14) - 66),(window.height() // 10) + 50)
+    button4.move(((mainMenuWidget.width() // 2) + (mainMenuWidget.width() // 14) - 66),(mainMenuWidget.height() // 10) + 50)
 
     #Create act five button
-    button5 = QPushButton(window)
+    button5 = QPushButton(mainMenuWidget)
     button5.setText("Act Five")
-    button5.move(((window.width() // 2) - (window.width() // 9) - 66),(window.height() // 10) + 100)
+    button5.move(((mainMenuWidget.width() // 2) - (mainMenuWidget.width() // 9) - 66),(mainMenuWidget.height() // 10) + 100)
     
     #Create act six button
-    button6 = QPushButton(window)
+    button6 = QPushButton(mainMenuWidget)
     button6.setText("Act Six")
-    button6.move(((window.width() // 2) + (window.width() // 14) - 66),(window.height() // 10) + 100)
+    button6.move(((mainMenuWidget.width() // 2) + (mainMenuWidget.width() // 14) - 66),(mainMenuWidget.height() // 10) + 100)
     
     #Create act seven button
-    button7 = QPushButton(window)
+    button7 = QPushButton(mainMenuWidget)
     button7.setText("Act Seven")
-    button7.move(((window.width() // 2) - (window.width() // 9) - 66),(window.height() // 10) + 150)
+    button7.move(((mainMenuWidget.width() // 2) - (mainMenuWidget.width() // 9) - 66),(mainMenuWidget.height() // 10) + 150)
     
     #Create act eight button
-    button8 = QPushButton(window)
+    button8 = QPushButton(mainMenuWidget)
     button8.setText("Act Eight")
-    button8.move(((window.width() // 2) + (window.width() // 14) - 66),(window.height() // 10) + 150)
+    button8.move(((mainMenuWidget.width() // 2) + (mainMenuWidget.width() // 14) - 66),(mainMenuWidget.height() // 10) + 150)
     
     #Create act nine button
-    button9 = QPushButton(window)
+    button9 = QPushButton(mainMenuWidget)
     button9.setText("Act Nine")
-    button9.move(((window.width() // 2) - (window.width() // 9) - 66),(window.height() // 10) + 200)
+    button9.move(((mainMenuWidget.width() // 2) - (mainMenuWidget.width() // 9) - 66),(mainMenuWidget.height() // 10) + 200)
     
     #Create act ten button
-    button10 = QPushButton(window)
+    button10 = QPushButton(mainMenuWidget)
     button10.setText("Act Ten")
-    button10.move(((window.width() // 2) + (window.width() // 14) - 66),(window.height() // 10) + 200)
+    button10.move(((mainMenuWidget.width() // 2) + (mainMenuWidget.width() // 14) - 66),(mainMenuWidget.height() // 10) + 200)
 
+class actOneMenu(QMainWindow):
+    actOneWidget.setWindowTitle("Poe quest GUI")
+    actOneWidget.setGeometry(0, 0, 800, 600)
+    title = QLabel("<h1>Act One</h1>", parent=actOneWidget)
+    
 
+window.addWidget(mainMenuWidget)
+window.addWidget(actOneWidget)
+window.setCurrentWidget(mainMenuWidget)
 #Show the window
-window.show()
 sys.exit(app.exec())
