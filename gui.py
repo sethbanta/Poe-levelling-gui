@@ -24,6 +24,14 @@ mainMenuWidget.setWindowTitle("Poe quest GUI")
 #Place it somewhere on the screen
 mainMenuWidget.setGeometry(0, 0, 800, 600)
 
+#Define a function for switching to the main menu
+def mainMenuSwitch(event):
+    window.setCurrentIndex(0)
+
+#Define a function for switching to the act one menu
+def actOneSwitch(event):
+    window.setCurrentIndex(1)
+
 #Define a function for switching to the act two menu
 def actTwoSwitch(event):
     window.setCurrentIndex(2)
@@ -151,6 +159,7 @@ class actOneMenu(QMainWindow):
     mainMenuButton = QPushButton(actOneWidget)
     mainMenuButton.setText("Main Menu")
     mainMenuButton.move(100,400)
+    mainMenuButton.clicked.connect(mainMenuSwitch)
     actTwoButton.clicked.connect(actTwoSwitch)
 
 #Create and fill the act two widget
