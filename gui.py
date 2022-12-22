@@ -48,6 +48,7 @@ class mainMenu(QMainWindow): #page 1
     button1 = QPushButton(mainMenuWidget)
     button1.setText("Act One")
     button1.move(((mainMenuWidget.width() // 2) - (mainMenuWidget.width() // 9) - 66),(mainMenuWidget.height() // 10))
+    button1.clicked.connect(actOneSwitch)
 
     #Create act two button
     button2 = QPushButton(mainMenuWidget)
@@ -174,6 +175,6 @@ class actTwoMenu(QMainWindow):
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
 window.addWidget(actTwoWidget)
-window.setCurrentWidget(actOneWidget)
+window.setCurrentWidget(mainMenuWidget)
 #Show the window
 sys.exit(app.exec())
