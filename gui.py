@@ -24,6 +24,11 @@ mainMenuWidget.setWindowTitle("Poe quest GUI")
 #Place it somewhere on the screen
 mainMenuWidget.setGeometry(0, 0, 800, 600)
 
+#Define a function for switching to the act two menu
+def actTwoSwitch(event):
+    window.setCurrentIndex(2)
+
+
 class mainMenu(QMainWindow): #page 1
     #Create a label to fill in the window
     helloMsg = QLabel("<h1>Hello, world!</h1>", parent=mainMenuWidget)
@@ -140,10 +145,26 @@ class actOneMenu(QMainWindow):
     cavernAnger.move(0,365)
     killMerv = QLabel("<b>14.</b> Kill Merveil, the Siren", parent=actOneWidget)
     killMerv.move(0,380)
-    
+    actTwoButton = QPushButton(actOneWidget)
+    actTwoButton.setText("Act Two")
+    actTwoButton.move(0,400)
+    mainMenuButton = QPushButton(actOneWidget)
+    mainMenuButton.setText("Main Menu")
+    mainMenuButton.move(100,400)
+    actTwoButton.clicked.connect(actTwoSwitch)
+
+#Create and fill the act two widget
+class actTwoMenu(QMainWindow):
+    #Set the widget up
+    actTwoWidget.setWindowTitle("Poe quest GUI")
+    actTwoWidget.setGeometry(0, 0, 800, 600) 
+    mainMenuButton = QPushButton(actTwoWidget)
+    mainMenuButton.setText("Main Menu")
+    mainMenuButton.move(100,400)   
     
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
+window.addWidget(actTwoWidget)
 window.setCurrentWidget(actOneWidget)
 #Show the window
 sys.exit(app.exec())
