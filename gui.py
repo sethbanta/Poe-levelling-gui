@@ -63,6 +63,7 @@ class mainMenu(QMainWindow): #page 1
     button3 = QPushButton(mainMenuWidget)
     button3.setText("Act Three")
     button3.move(((mainMenuWidget.width() // 2) - (mainMenuWidget.width() // 9) - 66),(mainMenuWidget.height() // 10) + 50)
+    button3.clicked.connect(actThreeSwitch)
 
     #Create act four button
     button4 = QPushButton(mainMenuWidget)
@@ -260,8 +261,10 @@ class actTwoMenu(QMainWindow):
     mainMenuButton.clicked.connect(mainMenuSwitch)
     actThreeButton.clicked.connect(actThreeSwitch)
     
-#Create and fill the act two widget
+#Create and fill the act three widget
 class actThreeMenu(QMainWindow):
+    actThreeWidget.setWindowTitle("Poe quest GUI")
+    actThreeWidget.setGeometry(0, 0, 800, 600)
     title = QLabel("<b>Act Three</b>", parent=actThreeWidget)
     clarissa = QLabel("<b>01.</b> Find and help Clarissa", parent=actThreeWidget)
     clarissa.move(0,15)
@@ -270,6 +273,7 @@ class actThreeMenu(QMainWindow):
     slums = QLabel("<b>03.</b> Travel to the Slums", parent=actThreeWidget)
     slums.move(0,45)
     crema = QLabel("<b>04.</b> Find the Crematorium", parent=actThreeWidget)
+    crema.move(0,60)
     #trial skip 15
     cremaPiety = QLabel("<b>05.</b> Find and kill Piety", parent=actThreeWidget)
     cremaPiety.move(0,75)
