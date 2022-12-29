@@ -54,6 +54,7 @@ class mainMenu(QMainWindow): #page 1
     button2 = QPushButton(mainMenuWidget)
     button2.setText("Act Two")
     button2.move(((mainMenuWidget.width() // 2) + (mainMenuWidget.width() // 14) - 66),(mainMenuWidget.height() // 10))
+    button2.clicked.connect(actTwoSwitch)
 
     #Create act three button
     button3 = QPushButton(mainMenuWidget)
@@ -168,10 +169,7 @@ class actTwoMenu(QMainWindow):
     #Set the widget up
     actTwoWidget.setWindowTitle("Poe quest GUI")
     actTwoWidget.setGeometry(0, 0, 800, 600) 
-    mainMenuButton = QPushButton(actTwoWidget)
-    mainMenuButton.setText("Main Menu")
-    mainMenuButton.move(100,400)   
-    
+
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
 window.addWidget(actTwoWidget)
