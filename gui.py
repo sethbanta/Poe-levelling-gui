@@ -171,6 +171,7 @@ class actTwoMenu(QMainWindow):
     #Set the widget up
     actTwoWidget.setWindowTitle("Poe quest GUI")
     actTwoWidget.setGeometry(0, 0, 800, 600)
+    title = QLabel("<b>Act Two</b>", parent=actTwoWidget)
     findTown = QLabel("<b>01.</b> Find the Forest Encampment", parent=actTwoWidget)
     findTown.move(0,15)
     oldFields = QLabel("<b>02.</b> Travel to the Old Fields", parent=actTwoWidget)
@@ -179,14 +180,16 @@ class actTwoMenu(QMainWindow):
     crossroads.move(0,45)
     crossroadsWp = QLabel("<b>03a.</b> Grab the Crossroads waypoint", parent=actTwoWidget)
     crossroadsWp.move(0,60)
-    #find fellshrine, crypt, trial
+    fellshrine = QLabel("<b>03b.</b> Find the Fellshrine Ruins", parent=actTwoWidget)
+    fellshrine.move(0,75)
+    crypt = QLabel("<b>01.</b> Find the Crypt and solve the trial of ascendancy", parent=actTwoWidget)
+    crypt.move(0,90)
     chamberSin = QLabel("<b>04.</b> Find the Chamber of Sin", parent=actTwoWidget)
     chamberSin.move(0,105)
     chamberSinTwo = QLabel("<b>05.</b> Find the Chamber of Sins Level 2", parent=actTwoWidget)
     chamberSinTwo.move(0,120)
-    chamberSinWp = QLabel("<b>05a.</b> Grab the Chamber of Sins Level 2 waypoint", parent=actTwoWidget)
-    chamberSinWp.move(0,135)
-    #trial
+    chamberSinTrial = QLabel("<b>05a.</b> Find and solve the Trial of Ascendancy", parent=actTwoWidget)
+    chamberSinTrial.move(0,135)
     chamberSinBoss = QLabel("<b>06.</b> Find and rescue Helena", parent=actTwoWidget)
     chamberSinBoss.move(0,150)
     crossroadsTwo = QLabel("<b>07.</b> Travel to the Crossroads", parent=actTwoWidget)
@@ -242,9 +245,9 @@ class actTwoMenu(QMainWindow):
     pyramid = QLabel("<b>28.</b> Find the Pyramid Apex", parent=actTwoWidget)
     pyramid.move(0,540)
     killPyramid = QLabel("<b>29.</b> Kill the Vaal Oversoul", parent=actTwoWidget)
-    killPyramid.move(0,565)
+    killPyramid.move(0,555)
     city = QLabel("<b>30.</b> Travel to the City of Sarn", parent=actTwoWidget)
-    city.move(0,580)
+    city.move(0,570)
     
     
 
