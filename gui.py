@@ -205,7 +205,8 @@ class actTwoMenu(QMainWindow):
     westernWp.move(0,255)
     alira = QLabel("<b>12.</b> Find and kill Alira", parent=actTwoWidget)
     alira.move(0,270)
-    #kill skill guy, pick up emblem, click wall
+    wayForward = QLabel("<b>12a.</b> Find and kill the Black Captain, take the emblem and use to open the path", parent=actTwoWidget)
+    wayForward.move(0,285)
     weaver = QLabel("<b>13.</b> Find the Weavers Chambers", parent=actTwoWidget)
     weaver.move(0,300)
     weaverNest = QLabel("<b>14.</b> Find the Weavers Nest", parent=actTwoWidget)
