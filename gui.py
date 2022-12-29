@@ -285,15 +285,20 @@ class actThreeMenu(QMainWindow):
     slumsTwo.move(0,120)
     sewerGrate = QLabel("<b>09.</b> Find the sewer grate and enter the Sewers", parent=actThreeWidget)
     sewerGrate.move(0,135)
-    #busts, waypoint, skip 30
+    sewerWp = QLabel("<b>09a.</b> Grab the Sewers waypoint", parent=actThreeWidget)
+    sewerWp.move(0,150)
+    #busts
     sewers = QLabel("<b>10.</b> Find the Marketplace", parent=actThreeWidget)
     sewers.move(0,180)
+    marketplaceWp = QLabel("<b>10a.</b> Grab the Marketplace waypoint", parent=actThreeWidget)
+    marketplaceWp.move(0,195)
     #waypoint, catacombs, trial skip 45
     marketplace = QLabel("<b>11.</b> Find the Battlegrounds", parent=actThreeWidget)
     marketplace.move(0,240)
     battlegrounds = QLabel("<b>12.</b> Find and take the Ribbon Spool", parent=actThreeWidget)
     battlegrounds.move(0,255)
-    #waypoint skip 15
+    battlegroundWp = QLabel("<b>12a.</b> Grab the Battlegrounds waypoint", parent=actThreeWidget)
+    battlegroundWp.move(0,270)
     docks = QLabel("<b>13.</b> Find the Docks", parent=actThreeWidget)
     docks.move(0,285)
     sulphite = QLabel("<b>14.</b> Find and take the Sulphite", parent=actThreeWidget)
@@ -308,7 +313,8 @@ class actThreeMenu(QMainWindow):
     dialla.move(0,360)
     sewersTwo = QLabel("<b>19.</b> Travel to the Sewers and burn the blockage and travel to Ebony Barracks", parent=actThreeWidget)
     sewersTwo.move(0,375)
-    #waypoint skip 15
+    ebonyWp = QLabel("<b>19a.</b> Grab the Ebony Barracks waypoint", parent=actThreeWidget)
+    ebonyWp.move(0,390)
     ebony = QLabel("<b>20.</b> Find the Lunaris Temple", parent=actThreeWidget)
     ebony.move(0,405)
     lunaris = QLabel("<b>21.</b> Find the Lunaris Temple level 2", parent=actThreeWidget)
