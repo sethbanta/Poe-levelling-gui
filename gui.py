@@ -35,6 +35,9 @@ def actOneSwitch(event):
 #Define a function for switching to the act two menu
 def actTwoSwitch(event):
     window.setCurrentIndex(2)
+    
+def actThreeSwitch(event):
+    window.setCurrentIndex(3)
 
 
 class mainMenu(QMainWindow): #page 1
@@ -248,12 +251,17 @@ class actTwoMenu(QMainWindow):
     killPyramid.move(0,555)
     city = QLabel("<b>30.</b> Travel to the City of Sarn", parent=actTwoWidget)
     city.move(0,570)
-    
+    actThreeButton = QPushButton(actTwoWidget)
+    actThreeButton.setText("Act Three")
+    actThreeButton.move(200,525)
+
+    actThreeButton.clicked.connect(actThreeSwitch)
     
 
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
 window.addWidget(actTwoWidget)
+window.addWidget(actThreeWidget)
 window.setCurrentWidget(mainMenuWidget)
 #Show the window
 sys.exit(app.exec())
