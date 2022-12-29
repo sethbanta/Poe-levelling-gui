@@ -286,7 +286,8 @@ class actThreeMenu(QMainWindow):
     sewerGrate.move(0,135)
     sewerWp = QLabel("<b>09a.</b> Grab the Sewers waypoint", parent=actThreeWidget)
     sewerWp.move(0,150)
-    #busts
+    busts = QLabel("<b>09b.</b> Find all three of Victarios Busts", parent=actThreeWidget)
+    busts.move(0,165)
     sewers = QLabel("<b>10.</b> Find the Marketplace", parent=actThreeWidget)
     sewers.move(0,180)
     marketplaceWp = QLabel("<b>10a.</b> Grab the Marketplace waypoint", parent=actThreeWidget)
