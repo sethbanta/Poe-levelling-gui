@@ -277,7 +277,8 @@ class actThreeMenu(QMainWindow):
     slums.move(0,45)
     crema = QLabel("<b>04.</b> Find the Crematorium", parent=actThreeWidget)
     crema.move(0,60)
-    cremaPiety = QLabel("<b>05.</b> Find and solve the trial of Ascendancy then kill Piety", parent=actThreeWidget)
+    #trial skip 15
+    cremaPiety = QLabel("<b>05.</b> Find and kill Piety", parent=actThreeWidget)
     cremaPiety.move(0,75)
     cremaTolman = QLabel("<b>06.</b> Take Tolmans bracelet", parent=actThreeWidget)
     cremaTolman.move(0,90)
@@ -295,10 +296,7 @@ class actThreeMenu(QMainWindow):
     sewers.move(0,180)
     marketplaceWp = QLabel("<b>10a.</b> Grab the Marketplace waypoint", parent=actThreeWidget)
     marketplaceWp.move(0,195)
-    catacombs = QLabel("<b>10b.</b> Find the Catacombs", parent=actThreeWidget)
-    catacombs.move(0,210)
-    catacombsTrial = QLabel("<b>10c.</b> Find and solve the trial of ascendancy", parent=actThreeWidget)
-    catacombsTrial.move(0,225)
+    #waypoint, catacombs, trial skip 45
     marketplace = QLabel("<b>11.</b> Find the Battlegrounds", parent=actThreeWidget)
     marketplace.move(0,240)
     battlegrounds = QLabel("<b>12.</b> Find and take the Ribbon Spool", parent=actThreeWidget)
@@ -331,8 +329,7 @@ class actThreeMenu(QMainWindow):
     ebonyTwo.move(0,450)
     garden = QLabel("<b>24.</b> Find the Imperial Gardens", parent=actThreeWidget)
     garden.move(0,465)
-    gardenTrial = QLabel("<b>24a.</b> Find and solve the trial of ascendancy", parent=actThreeWidget)
-    gardenTrial.move(0,480)
+    #trial skip 15
     tower = QLabel("<b>25.</b> Find the Sceptre of God", parent=actThreeWidget)
     tower.move(0,495)
     lower = QLabel("<b>26.</b> Find the Upper Sceptre of God", parent=actThreeWidget)
