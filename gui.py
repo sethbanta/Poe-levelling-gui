@@ -344,7 +344,10 @@ class actThreeMenu(QMainWindow):
     actFourButton = QPushButton(actThreeWidget)
     actFourButton.setText("Act Four")
     actFourButton.move(0,560)
-
+    mainMenuButton = QPushButton(actThreeWidget)
+    mainMenuButton.setText("Main Menu")
+    mainMenuButton.move(100,560)
+    mainMenuButton.clicked.connect(mainMenuSwitch)
     actFourButton.clicked.connect(actFourSwitch)
     
 window.addWidget(mainMenuWidget)
