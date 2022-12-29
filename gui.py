@@ -254,7 +254,10 @@ class actTwoMenu(QMainWindow):
     actThreeButton = QPushButton(actTwoWidget)
     actThreeButton.setText("Act Three")
     actThreeButton.move(200,525)
-
+    mainMenuButton = QPushButton(actTwoWidget)
+    mainMenuButton.setText("Main Menu")
+    mainMenuButton.move(200,555)
+    mainMenuButton.clicked.connect(mainMenuSwitch)
     actThreeButton.clicked.connect(actThreeSwitch)
     
 
