@@ -177,12 +177,16 @@ class actTwoMenu(QMainWindow):
     oldFields.move(0,30)
     crossroads = QLabel("<b>03.</b> Find the Crossroads", parent=actTwoWidget)
     crossroads.move(0,45)
-    #waypoint, find fellshrine, crypt, trial, leave space for 3 text lines, skip 60
+    crossroadsWp = QLabel("<b>03a.</b> Grab the Crossroads waypoint", parent=actTwoWidget)
+    crossroadsWp.move(0,60)
+    #find fellshrine, crypt, trial
     chamberSin = QLabel("<b>04.</b> Find the Chamber of Sin", parent=actTwoWidget)
     chamberSin.move(0,105)
     chamberSinTwo = QLabel("<b>05.</b> Find the Chamber of Sins Level 2", parent=actTwoWidget)
     chamberSinTwo.move(0,120)
-    #waypoint, trial, skip 30
+    chamberSinWp = QLabel("<b>05a.</b> Grab the Chamber of Sins Level 2 waypoint", parent=actTwoWidget)
+    chamberSinWp.move(0,135)
+    #trial
     chamberSinBoss = QLabel("<b>06.</b> Find and rescue Helena", parent=actTwoWidget)
     chamberSinBoss.move(0,150)
     crossroadsTwo = QLabel("<b>07.</b> Travel to the Crossroads", parent=actTwoWidget)
@@ -193,13 +197,15 @@ class actTwoMenu(QMainWindow):
     kraityn.move(0,195)
     riverways = QLabel("<b>10.</b> Travel to the Riverways", parent=actTwoWidget)
     riverways.move(0,210)
-    #waypoint, skip 15
+    riverwaysWp = QLabel("<b>10a.</b> Grab the Riverways waypoint", parent=actTwoWidget)
+    riverwaysWp.move(0,225)
     westernForest = QLabel("<b>11.</b> Find the Western Forest", parent=actTwoWidget)
     westernForest.move(0,240)
-    #waypoint skip 15
+    westernWp = QLabel("<b>11a.</b> Grab the Western Forest waypoint", parent=actTwoWidget)
+    westernWp.move(0,255)
     alira = QLabel("<b>12.</b> Find and kill Alira", parent=actTwoWidget)
-    alira.move(0,255)
-    #kill skill guy, pick up emblem, click wall, skip 45
+    alira.move(0,270)
+    #kill skill guy, pick up emblem, click wall
     weaver = QLabel("<b>13.</b> Find the Weavers Chambers", parent=actTwoWidget)
     weaver.move(0,300)
     weaverNest = QLabel("<b>14.</b> Find the Weavers Nest", parent=actTwoWidget)
@@ -216,7 +222,8 @@ class actTwoMenu(QMainWindow):
     oak.move(0,390)
     ruins = QLabel("<b>20.</b> Find the Vaal Ruins", parent=actTwoWidget)
     ruins.move(0,405)
-    #waypoint skip 15
+    ruinsWp = QLabel("<b>20a.</b> Grab the Wetlands waypoint", parent=actTwoWidget)
+    ruinsWp.move(0,420)
     ruinsTwo = QLabel("<b>21.</b> Travel to the Forest Encampment", parent=actTwoWidget)
     ruinsTwo.move(0,435)
     apex = QLabel("<b>22.</b> Talk to Eramir and take the Apex", parent=actTwoWidget)
