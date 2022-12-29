@@ -39,6 +39,9 @@ def actTwoSwitch(event):
 def actThreeSwitch(event):
     window.setCurrentIndex(3)
 
+def actFourSwitch(event):
+    window.setCurrentIndex(4)
+
 
 class mainMenu(QMainWindow): #page 1
     #Create a label to fill in the window
@@ -338,11 +341,17 @@ class actThreeMenu(QMainWindow):
     upper.move(0,525)
     dominus = QLabel("<b>28.</b> Kill Dominus and travel to the Aqueducts", parent=actThreeWidget)
     dominus.move(0,540)
+    actFourButton = QPushButton(actThreeWidget)
+    actFourButton.setText("Act Four")
+    actFourButton.move(0,560)
+
+    actFourButton.clicked.connect(actFourSwitch)
     
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
 window.addWidget(actTwoWidget)
 window.addWidget(actThreeWidget)
+window.addWidget(actFourWidget)
 window.setCurrentWidget(mainMenuWidget)
 #Show the window
 sys.exit(app.exec())
