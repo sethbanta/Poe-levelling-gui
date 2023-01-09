@@ -367,6 +367,8 @@ class actFourMenu(QMainWindow):
     minesOne = QLabel("<b>05.</b> Find The Mines Level 2", parent=actFourWidget)
     minesOne.move(0,75)
     #skill here, 90
+    spirit = QLabel("<b>05a.</b> Free Deshret", parent=actFourWidget)
+    spirit.move(0,90)
     minesTwo = QLabel("<b>06.</b> Find The Crystal Veins", parent=actFourWidget)
     minesTwo.move(0,105)
     crystal = QLabel("<b>07.</b> Find Dialla and head in Daresso's Dream", parent=actFourWidget)
