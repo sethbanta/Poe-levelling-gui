@@ -401,6 +401,10 @@ class actFourMenu(QMainWindow):
     core.move(0,315)
     ascent = QLabel("<b>19.</b> Head to Highgate and travel to the Ascent", parent=actFourWidget)
     ascent.move(0,330)
+    mainMenu = QPushButton(actFourWidget)
+    mainMenu.setText("Main Menu")
+    mainMenu.move(0,350)
+    mainMenu.clicked.connect(mainMenuSwitch)
     
     
 window.addWidget(mainMenuWidget)
