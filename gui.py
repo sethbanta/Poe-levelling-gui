@@ -366,14 +366,14 @@ class actFourMenu(QMainWindow):
     mines.move(0,60)
     minesOne = QLabel("<b>05.</b> Find The Mines Level 2", parent=actFourWidget)
     minesOne.move(0,75)
-    #skill here, 90
     spirit = QLabel("<b>05a.</b> Free Deshret", parent=actFourWidget)
     spirit.move(0,90)
     minesTwo = QLabel("<b>06.</b> Find The Crystal Veins", parent=actFourWidget)
     minesTwo.move(0,105)
     crystal = QLabel("<b>07.</b> Find Dialla and head in Daresso's Dream", parent=actFourWidget)
     crystal.move(0,120)
-    #waypoint here, 135
+    crystalWaypoint = QLabel("<b>07a.</b> Grab the Crystal Veins waypoint", parent=actFourWidget)
+    crystalWaypoint.move(0,135)
     daresso = QLabel("<b>08.</b> Find The Grand Arena", parent=actFourWidget)
     daresso.move(0,150)
     arena = QLabel("<b>09.</b> Find the Ring of Blades and kill Daresso to collect the Eye of Desire", parent=actFourWidget)
@@ -392,7 +392,8 @@ class actFourMenu(QMainWindow):
     bellyTwo.move(0,255)
     harvest = QLabel("<b>16.</b> Proceed to the Harvest", parent=actFourWidget)
     harvest.move(0,270)
-    #waypoint here 285
+    harvestWaypoint = QLabel("<b>16a.</b> Grab the Harvest waypoint", parent=actFourWidget)
+    harvestWaypoint.move(0,285)
     organs = QLabel("<b>17.</b> Collect Malachais organs", parent=actFourWidget)
     organs.move(0,300)
     core = QLabel("<b>18.</b> Enter the Black Core and kill Malachai", parent=actFourWidget)
