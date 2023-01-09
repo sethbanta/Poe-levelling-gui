@@ -41,6 +41,9 @@ def actThreeSwitch(event):
 
 def actFourSwitch(event):
     window.setCurrentIndex(4)
+    
+def actFiveSwitch(event):
+    window.setCurrentIndex(5)
 
 
 class mainMenu(QMainWindow): #page 1
@@ -405,6 +408,10 @@ class actFourMenu(QMainWindow):
     mainMenu.setText("Main Menu")
     mainMenu.move(0,350)
     mainMenu.clicked.connect(mainMenuSwitch)
+    actFive = QPushButton(actFourWidget)
+    actFive.setText("Act Five")
+    actFive.move(100,350)
+    actFive.clicked.connect(actFiveSwitch)
     
     
 window.addWidget(mainMenuWidget)
@@ -412,6 +419,7 @@ window.addWidget(actOneWidget)
 window.addWidget(actTwoWidget)
 window.addWidget(actThreeWidget)
 window.addWidget(actFourWidget)
+window.addWidget(actFiveWidget)
 window.setCurrentWidget(mainMenuWidget)
 #Show the window
 sys.exit(app.exec())
