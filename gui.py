@@ -450,7 +450,11 @@ class actFiveMenu(QMainWindow):
     rooftop = QLabel("<b>10.</b> Find the Cathedral Apex and kill Kitava", parent=actFiveWidget)
     rooftop.move(0,225)
     dock = QLabel("<b>11.</b> Find Lily and sail to Wraeclast", parent=actFiveWidget)
-    dock.move(0,240)    
+    dock.move(0,240)
+    mainMenu = QPushButton(actFiveWidget)
+    mainMenu.setText("Main Menu")
+    mainMenu.move(0,260)
+    mainMenu.clicked.connect(mainMenuSwitch)
     
     
     
