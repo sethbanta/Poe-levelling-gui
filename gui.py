@@ -413,6 +413,42 @@ class actFourMenu(QMainWindow):
     actFive.move(100,350)
     actFive.clicked.connect(actFiveSwitch)
     
+#Create and fill the act five widget
+class actFiveMenu(QMainWindow):
+    actFiveWidget.setWindowTitle("Poe quest GUI")
+    actFiveWidget.setGeometry(0, 0, 800, 600)
+    title = QLabel("<b>Act Five</b>", parent=actFiveWidget)
+    ascent = QLabel("<b>01.</b> Find the switch to Oriath and take the portal", parent=actFiveWidget)
+    ascent.move(0,15)
+    pens = QLabel("<b>02.</b> Find and kill Overseer Krow then go to Overseer's Tower", parent=actFiveWidget)
+    pens.move(0,30)
+    oblock = QLabel("<b>03.</b> Find and kill the Justicar then head to The Templar Courts", parent=actFiveWidget)
+    oblock.move(0,45)
+    #skill point, 60
+    templarCourts = QLabel("<b>04.</b> Find The Chamber of Innocence", parent=actFiveWidget)
+    templarCourts.move(0,75)
+    chamber = QLabel("<b>05.</b> Find the Sanctum of Innocence", parent=actFiveWidget)
+    chamber.move(0,90)
+    sanctum = QLabel("<b>06.</b> Find and kill Avarius", parent=actFiveWidget)
+    sanctum.move(0,105)
+    torched = QLabel("<b>07.</b> Head to the Torched Courts", parent=actFiveWidget)
+    torched.move(0,120)
+    torchedCourts = QLabel("<b>08.</b> Find The Ruined Square", parent=actFiveWidget)
+    torchedCourts.move(0,135)
+    #waypoint, 150
+    ossuary = QLabel("<b>09.</b> Find The Ossuary", parent=actFiveWidget)
+    ossuary.move(0,165)
+    insideOssuary = QLabel("<b>10.</b> Find and take the Sign of Purity then head back to The Ruined Square", parent=actFiveWidget)
+    insideOssuary.move(0,190)
+    #skill point, 205
+    square = QLabel("<b>11.</b> Find the Cathedral Rooftop", parent=actFiveWidget)
+    square.move(0,220)
+    rooftop = QLabel("<b>10.</b> Find the Cathedral Apex and kill Kitava", parent=actFiveWidget)
+    rooftop.move(0,235)
+    dock = QLabel("<b>11.</b> Find Lily and sail to Wraeclast", parent=actFiveWidget)
+    dock.move(0,250)    
+    
+    
     
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
