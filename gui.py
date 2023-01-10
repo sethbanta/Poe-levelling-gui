@@ -424,7 +424,8 @@ class actFiveMenu(QMainWindow):
     pens.move(0,30)
     oblock = QLabel("<b>03.</b> Find and kill the Justicar then head to The Templar Courts", parent=actFiveWidget)
     oblock.move(0,45)
-    #skill point, 60
+    miasmeter = QLabel("<b>03a.</b> Find the Miasmeter", parent=actFiveWidget)
+    miasmeter.move(0,60)
     templarCourts = QLabel("<b>04.</b> Find The Chamber of Innocence", parent=actFiveWidget)
     templarCourts.move(0,75)
     chamber = QLabel("<b>05.</b> Find the Sanctum of Innocence", parent=actFiveWidget)
@@ -440,7 +441,8 @@ class actFiveMenu(QMainWindow):
     ossuary.move(0,165)
     insideOssuary = QLabel("<b>10.</b> Find and take the Sign of Purity then head back to The Ruined Square", parent=actFiveWidget)
     insideOssuary.move(0,190)
-    #skill point, 205
+    reliquary = QLabel("<b>10a.</b> Find the Reliquary and collect Kitava's torments", parent=actFiveWidget)
+    reliquary.move(0,205)
     square = QLabel("<b>11.</b> Find the Cathedral Rooftop", parent=actFiveWidget)
     square.move(0,220)
     rooftop = QLabel("<b>10.</b> Find the Cathedral Apex and kill Kitava", parent=actFiveWidget)
