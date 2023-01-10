@@ -436,19 +436,20 @@ class actFiveMenu(QMainWindow):
     torched.move(0,120)
     torchedCourts = QLabel("<b>08.</b> Find The Ruined Square", parent=actFiveWidget)
     torchedCourts.move(0,135)
-    #waypoint, 150
+    waypoint = QLabel("<b>08a.</b> Find the waypoint to The Ruined Square", parent=actFiveWidget)
+    waypoint.move(0,150)
     ossuary = QLabel("<b>09.</b> Find The Ossuary", parent=actFiveWidget)
     ossuary.move(0,165)
     insideOssuary = QLabel("<b>10.</b> Find and take the Sign of Purity then head back to The Ruined Square", parent=actFiveWidget)
-    insideOssuary.move(0,190)
+    insideOssuary.move(0,180)
     reliquary = QLabel("<b>10a.</b> Find the Reliquary and collect Kitava's torments", parent=actFiveWidget)
-    reliquary.move(0,205)
+    reliquary.move(0,195)
     square = QLabel("<b>11.</b> Find the Cathedral Rooftop", parent=actFiveWidget)
-    square.move(0,220)
+    square.move(0,210)
     rooftop = QLabel("<b>10.</b> Find the Cathedral Apex and kill Kitava", parent=actFiveWidget)
-    rooftop.move(0,235)
+    rooftop.move(0,225)
     dock = QLabel("<b>11.</b> Find Lily and sail to Wraeclast", parent=actFiveWidget)
-    dock.move(0,250)    
+    dock.move(0,240)    
     
     
     
