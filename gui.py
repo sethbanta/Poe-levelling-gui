@@ -490,7 +490,8 @@ class actSixMenu(QMainWindow):
     gate.move(0,180)
     western = QLabel("<b>10.</b> Find the Riverways", parent=actSixWidget)
     western.move(0,195)
-    #waypoint, 210
+    riverwaysWp = QLabel("<b>10a.</b> Find the Riverways Waypoint", parent=actSixWidget)
+    riverwaysWp.move(0,210)
     #wetlands travel for skill point, 225
     #find grounds and kill boss, 240
     riverways = QLabel("<b>11.</b> Find the Southern Forest", parent=actSixWidget)
