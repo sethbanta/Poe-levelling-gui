@@ -473,7 +473,8 @@ class actSixMenu(QMainWindow):
     flats.move(0,30)
     flatsTwo = QLabel("<b>03.</b> Use the Eye of Conquest to open the Karui Fortress", parent=actSixWidget)
     flatsTwo.move(0,45)
-    #skill point, 60
+    tuko = QLabel("<b>03a.</b> Find and kill Tukohama", parent=actSixWidget)
+    tuko.move(0,60)
     fortress = QLabel("<b>04.</b> Find the Ridge", parent=actSixWidget)
     fortress.move(0,75)
     ridge = QLabel("<b>05.</b> Find The Lower Prison", parent=actSixWidget)
@@ -485,15 +486,18 @@ class actSixMenu(QMainWindow):
     tower.move(0,135)
     towerTwo = QLabel("<b>08.</b> Head to the Warden's Chambers then Prisoner's Gate", parent=actSixWidget)
     towerTwo.move(0,150)
-    #skill point, 165
+    abberath = QLabel("<b>08a.</b> Find and kill Abberath", parent=actSixWidget)
+    abberath.move(0,165)
     gate = QLabel("<b>09.</b> Find The Western Forest", parent=actSixWidget)
     gate.move(0,180)
     western = QLabel("<b>10.</b> Find the Riverways", parent=actSixWidget)
     western.move(0,195)
     riverwaysWp = QLabel("<b>10a.</b> Find the Riverways Waypoint", parent=actSixWidget)
     riverwaysWp.move(0,210)
-    #wetlands travel for skill point, 225
-    #find grounds and kill boss, 240
+    wetland = QLabel("<b>10b.</b> Find the Wetlands", parent=actSixWidget)
+    wetland.move(0,225)
+    spawning = QLabel("<b>10c.</b> Find the Spawning Grounds and kill the Puppet Mistress", parent=actSixWidget)
+    spawning.move(0,240)
     riverways = QLabel("<b>11.</b> Find the Southern Forest", parent=actSixWidget)
     riverways.move(0,255)
     southern = QLabel("<b>12.</b> Find the Cavern of Anger", parent=actSixWidget)
