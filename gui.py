@@ -479,7 +479,8 @@ class actSixMenu(QMainWindow):
     fortress.move(0,75)
     ridge = QLabel("<b>05.</b> Find The Lower Prison", parent=actSixWidget)
     ridge.move(0,90)
-    #trial, 105
+    trial = QLabel("<b>05a.</b> Find and solve the Trial of Ascendancy", parent=actSixWidget)
+    trial.move(0,105)
     lower = QLabel("<b>06.</b> Find Shavronne's Tower", parent=actSixWidget)
     lower.move(0,120)
     tower = QLabel("<b>07.</b> Find the Prison Rooftop and kill Shavronne & Reassembled Brutus", parent=actSixWidget)
