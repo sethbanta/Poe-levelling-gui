@@ -462,7 +462,51 @@ class actFiveMenu(QMainWindow):
     actSix.move(100,260)
     actSix.clicked.connect(actSixSwitch)
     
-    
+#Create and fill the act six widget
+class actSixMenu(QMainWindow):
+    actSixWidget.setWindowTitle("Poe quest GUI")
+    actSixWidget.setGeometry(0, 0, 800, 600)
+    title = QLabel("<b>Act Six</b>", parent=actSixWidget)
+    coast = QLabel("<b>01.</b> Head to The Coast and find The Mud Flats", parent=actSixWidget)
+    coast.move(0,15)
+    flats = QLabel("<b>02.</b> Find and kill The Dishonoured Queen and take the Eye of Conquest", parent=actSixWidget)
+    flats.move(0,30)
+    flatsTwo = QLabel("<b>03.</b> Use the Eye of Conquest to open the Karui Fortress", parent=actSixWidget)
+    flatsTwo.move(0,45)
+    #skill point, 60
+    fortress = QLabel("<b>04.</b> Find the Ridge", parent=actSixWidget)
+    fortress.move(0,75)
+    ridge = QLabel("<b>05.</b> Find The Lower Prison", parent=actSixWidget)
+    ridge.move(0,90)
+    #trial, 105
+    lower = QLabel("<b>06.</b> Find Shavronne's Tower", parent=actSixWidget)
+    lower.move(0,120)
+    tower = QLabel("<b>07.</b> Find the Prison Rooftop and kill Shavronne & Reassembled Brutus", parent=actSixWidget)
+    tower.move(0,135)
+    towerTwo = QLabel("<b>08.</b> Head to the Warden's Chambers then Prisoner's Gate", parent=actSixWidget)
+    towerTwo.move(0,150)
+    #skill point, 165
+    gate = QLabel("<b>09.</b> Find The Western Forest", parent=actSixWidget)
+    gate.move(0,180)
+    western = QLabel("<b>10.</b> Find the Riverways", parent=actSixWidget)
+    western.move(0,195)
+    #waypoint, 210
+    #wetlands travel for skill point, 225
+    #find grounds and kill boss, 240
+    riverways = QLabel("<b>11.</b> Find the Southern Forest", parent=actSixWidget)
+    riverways.move(0,255)
+    southern = QLabel("<b>12.</b> Find the Cavern of Anger", parent=actSixWidget)
+    southern.move(0,270)
+    cavern = QLabel("<b>13.</b> Take the Black Flag and find The Beacon", parent=actSixWidget)
+    cavern.move(0,285)
+    beacon = QLabel("<b>14.</b> Light the Beacon and throw in the Black Flag", parent=actSixWidget)
+    beacon.move(0,300)
+    beaconTwo = QLabel("<b>15.</b> Talk to Waylam Roth and sail to The Brine King's Reef", parent=actSixWidget)
+    beaconTwo.move(0,315)
+    reef = QLabel("<b>16.</b> Find the Brine King's Throne and kill the Brine King", parent=actSixWidget)
+    reef.move(0,330)
+    reefTwo = QLabel("<b>17.</b> Sail to The Bridge Encampment", parent=actSixWidget)
+    reefTwo.move(0,345)
     
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
