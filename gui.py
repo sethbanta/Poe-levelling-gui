@@ -514,6 +514,10 @@ class actSixMenu(QMainWindow):
     reef.move(0,330)
     reefTwo = QLabel("<b>17.</b> Sail to The Bridge Encampment", parent=actSixWidget)
     reefTwo.move(0,345)
+    mainMenu = QPushButton(actSixWidget)
+    mainMenu.setText("Main Menu")
+    mainMenu.move(0,365)
+    mainMenu.clicked.connect(mainMenuSwitch)
     
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
