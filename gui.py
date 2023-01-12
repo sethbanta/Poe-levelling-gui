@@ -526,6 +526,59 @@ class actSixMenu(QMainWindow):
     actSeven.move(100,365)
     actSeven.clicked.connect(actSevenSwitch)
     
+#Create and fill the act seven widget
+class actSevenMenu(QMainWindow):
+    actSevenWidget.setWindowTitle("Poe quest GUI")
+    actSevenWidget.setGeometry(0, 0, 800, 600)
+    title = QLabel("Act Seven", parent=actSevenWidget)
+    bridge = QLabel("<b>01.</b> Head to The Broken Bridge", parent=actSevenWidget)
+    bridge.move(0,15)
+    bridgeTwo = QLabel("<b>02.</b> Find The Crossroads", parent=actSevenWidget)
+    bridgeTwo.move(0,30)
+    #waypoint, 45
+    crossroad = QLabel("<b>03.</b> Find The Fellshrine Ruins", parent=actSevenWidget)
+    crossroad.move(0,60)
+    fellshrine = QLabel("<b>04.</b> Find The Crypt", parent=actSevenWidget)
+    fellshrine.move(0,75)
+    #lab, 90
+    crypt = QLabel("<b>05.</b> Find Maligaro's Map", parent=actSevenWidget)
+    crypt.move(0,105)
+    crossroadTwo = QLabel("<b>06.</b> Head back to The Crossroads waypoint and find The Chamber of Sins Level 1", parent=actSevenWidget)
+    crossroadTwo.move(0,120)
+    chamberOne = QLabel("<b>07.</b> Activate the Map Device with Maligaro's Map", parent=actSevenWidget)
+    chamberOne.move(0,135)
+    maligaro = QLabel("<b>08.</b> Enter Maligaro's Sanctum then find and kill Maligaro to take the Black Venom", parent=actSevenWidget)
+    maligaro.move(0,150)
+    chamberTwo = QLabel("<b>09.</b> Portal back to the Chamber of Sins and give Silk the Venom then find The Chamber of Sins Level 2", parent=actSevenWidget)
+    chamberTwo.move(0,165)
+    #lab, 180
+    chamberThree = QLabel("<b>10.</b> Find the secret passage to The Den", parent=actSevenWidget)
+    chamberThree.move(0,195)
+    den = QLabel("<b>11.</b> Find the Ashen Fields", parent=actSevenWidget)
+    den.move(0,210)
+    ashen = QLabel("<b>12.</b> Find and kill Greust then head to the Nothern Forest", parent=actSevenWidget)
+    ashen.move(0,225)
+    northern = QLabel("<b>13.</b> Find the Dread Thicket", parent=actSevenWidget)
+    northern.move(0,240)
+    dread = QLabel("<b>14.</b> Find and take seven Fireflies then head back to The Nothern Forest", parent=actSevenWidget)
+    dread.move(0,255)
+    #skill point, 270
+    northernTwo = QLabel("<b>15.</b> Find The Causeway", parent=actSevenWidget)
+    northernTwo.move(0,285)
+    causeway = QLabel("<b>16.</b> Find The Vaal City", parent=actSevenWidget)
+    causeway.move(0,300)
+    #skill point, 315
+    vaal = QLabel("<b>17.</b> Find The Temple of Decay Level 1", parent=actSevenWidget)
+    vaal.move(0,330)
+    decay = QLabel("<b>18.</b> Find The Temple of Decay Level 2", parent=actSevenWidget)
+    decay.move(0,345)
+    decayTwo = QLabel("<b>19.</b> Find Arakaali's Web and kill Arakaali", parent=actSevenWidget)
+    decayTwo.move(0,360)
+    sarn = QLabel("<b>20.</b> Head to The Sarn Ramparts", parent=actSevenWidget)
+    sarn.move(0,375)
+    
+    
+    
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
 window.addWidget(actTwoWidget)
