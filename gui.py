@@ -535,7 +535,8 @@ class actSevenMenu(QMainWindow):
     bridge.move(0,15)
     bridgeTwo = QLabel("<b>02.</b> Find The Crossroads", parent=actSevenWidget)
     bridgeTwo.move(0,30)
-    #waypoint, 45
+    waypoint = QLabel("<b>02a.</b> Find The Crossroads waypoint", parent=actSevenWidget)
+    waypoint.move(0,45)
     crossroad = QLabel("<b>03.</b> Find The Fellshrine Ruins", parent=actSevenWidget)
     crossroad.move(0,60)
     fellshrine = QLabel("<b>04.</b> Find The Crypt", parent=actSevenWidget)
