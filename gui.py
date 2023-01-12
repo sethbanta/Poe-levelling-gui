@@ -582,6 +582,10 @@ class actSevenMenu(QMainWindow):
     decayTwo.move(0,360)
     sarn = QLabel("<b>20.</b> Head to The Sarn Ramparts", parent=actSevenWidget)
     sarn.move(0,375)
+    mainMenu = QPushButton(actSevenWidget)
+    mainMenu.setText("Main Menu")
+    mainMenu.move(0,395)
+    mainMenu.clicked.connect(mainMenuSwitch)
     
     
     
