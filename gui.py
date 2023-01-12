@@ -565,12 +565,14 @@ class actSevenMenu(QMainWindow):
     northern.move(0,240)
     dread = QLabel("<b>14.</b> Find and take seven Fireflies then head back to The Nothern Forest", parent=actSevenWidget)
     dread.move(0,255)
-    #skill point, 270
+    dreadSkill = QLabel("<b>14a.</b> Find the Den of Despair and kill Gruthkul", parent=actSevenWidget)
+    dreadSkill.move(0,270)
     northernTwo = QLabel("<b>15.</b> Find The Causeway", parent=actSevenWidget)
     northernTwo.move(0,285)
+    causewaySkill = QLabel("<b>16a.</b> Find and take Kishara's Star", parent=actSevenWidget)
+    causewaySkill.move(0,300)
     causeway = QLabel("<b>16.</b> Find The Vaal City", parent=actSevenWidget)
-    causeway.move(0,300)
-    #skill point, 315
+    causeway.move(0,315)
     vaal = QLabel("<b>17.</b> Find The Temple of Decay Level 1", parent=actSevenWidget)
     vaal.move(0,330)
     decay = QLabel("<b>18.</b> Find The Temple of Decay Level 2", parent=actSevenWidget)
