@@ -671,6 +671,59 @@ class actEightMenu(QMainWindow):
     actNine.move(100,455)
     actNine.clicked.connect(actNineSwitch)
     
+#Create and fill the act nine widget
+class actNineMenu(QMainWindow):
+    actNineWidget.setWindowTitle("Poe quest GUI")
+    actNineWidget.setGeometry(0, 0, 800, 600)
+    title = QLabel("<b>Act Nine</b>", parent=actNineWidget)
+    aqueduct = QLabel("<b>01.</b> Find Highgate", parent=actNineWidget)
+    aqueduct.move(0,15)
+    highgate = QLabel("<b>02.</b> Travel to The Descent", parent=actNineWidget)
+    highgate.move(0,30)
+    descent = QLabel("<b>03.</b> Find The Vastiri Desert", parent=actNineWidget)
+    descent.move(0,45)
+    #waypoint, 60
+    #skill point, storm blade, 75
+    #skill point, highgate -> bottled storm, 90
+    #skill point, clear storm --> oasis, 105
+    #skill point, kill shakari, 120
+    desert = QLabel("<b>04.</b> Find The Foothills", parent=actNineWidget)
+    desert.move(0,135)
+    #waypoint, 150
+    foothills = QLabel("<b>05.</b> Find The Boiling Lake", parent=actNineWidget)
+    foothills.move(0,165)
+    lake = QLabel("<b>06.</b> Find and kill The Basilisk and take the Basilisk Acid", parent=actNineWidget)
+    lake.move(0,180)
+    lakeTwo = QLabel("<b>07.</b> Travel back to The Foothills waypoint and find The Tunnel", parent=actNineWidget)
+    lakeTwo.move(0,195)
+    #lab trial 210
+    tunnels = QLabel("<b>08.</b> Find The Quarry", parent=actNineWidget)
+    tunnels.move(0,225)
+    #waypoint, 240
+    #skill point, 255
+    #feather, 270
+    quarry = QLabel("<b>09.</b> Find The Refinery", parent=actNineWidget)
+    quarry.move(0,285)
+    refinery = QLabel("<b>10.</b> Find and kill General Adus then take the Trarthan Powder", parent=actNineWidget)
+    refinery.move(0,300)
+    refineryTwo = QLabel("<b>11.</b> Travel back to The Quarry and talk to Sin to enter The Belly of the Beast", parent=actNineWidget)
+    refineryTwo.move(0,315)
+    belly = QLabel("<b>12.</b> Find The Rotting Core", parent=actNineWidget)
+    belly.move(0,330)
+    core = QLabel("<b>13.</b> Find The Black Core", parent=actNineWidget)
+    core.move(0,345)
+    black = QLabel("<b>14.</b> Talk to Sin then enter Doedre's Despair", parent=actNineWidget)
+    black.move(0,360)
+    doedre = QLabel("<b>15.</b> Find and kill Doedre then travel back to the Black Core", parent=actNineWidget)
+    doedre.move(0,375)
+    maligaro = QLabel("<b>16.</b> Enter Maligaro's Misery, find and kill Maligaro then travel to the Black Core", parent=actNineWidget)
+    maligaro.move(0,390)
+    shav = QLabel("<b>17.</b> Enter Shavronne's Sorrow, find and kill Shavronne then travel to the Black Core", parent=actNineWidget)
+    shav.move(0,405)
+    coreBoss = QLabel("<b>18.</b> Enter the Black Heart and kill The Depraved Trinity", parent=actNineWidget)
+    coreBoss.move(0,420)
+    oriath = QLabel("<b>19.</b> Talk to Lily and sail to Oraith Docks", parent=actNineWidget)
+    oriath.move(0,435)
     
     
 window.addWidget(mainMenuWidget)
