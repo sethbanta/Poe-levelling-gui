@@ -756,7 +756,8 @@ class actTenMenu(QMainWindow):
     rooftop.move(0,15)
     apex = QLabel("<b>02.</b> Find The Ravaged Square", parent=actTenWidget)
     apex.move(0,30)
-    #waypoint 45
+    waypoint = QLabel("<b>02a.</b> Find and grab the waypoint for The Ravaged Square", parent=actTenWidget) 
+    waypoint.move(0,45)
     blocks = QLabel("<b>02b.</b> Find The Control Blocks", parent=actTenWidget) 
     blocks.move(0,60)
     vilenta = QLabel("<b>02c.</b> Find and kill Vilenta", parent=actTenWidget) 
