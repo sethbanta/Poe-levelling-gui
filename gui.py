@@ -747,6 +747,41 @@ class actNineMenu(QMainWindow):
     actTen.move(100,455)
     actTen.clicked.connect(actTenSwitch)
     
+#Create and fill the act ten widget
+class actTenMenu(QMainWindow):
+    actTenWidget.setWindowTitle("Poe quest GUI")
+    actTenWidget.setGeometry(0, 0, 800, 600)
+    title = QLabel("<b>Act Ten</b>")
+    rooftop = QLabel("<b>01.</b> Find the Cathedral Apex and kill Plaguewing", parent=actTenWidget)
+    rooftop.move(0,15)
+    apex = QLabel("<b>02.</b> Find The Ravaged Square", parent=actTenWidget)
+    apex.move(0,30)
+    #waypoint 45
+    #blocks 60
+    #vilenta 75
+    #back to wp then ossuary 90
+    #trial 105
+    ravaged = QLabel("<b>03.</b> Find The Torched Courts", parent=actTenWidget) 
+    ravaged.move(0,120)
+    torched = QLabel("<b>04.</b> Find The Desecrated Chambers", parent=actTenWidget) 
+    torched.move(0,135)
+    desecrated = QLabel("<b>05.</b> Find the Sanctum of Innocence and kill Avarius to take the Staff of Purity", parent=actTenWidget) 
+    desecrated.move(0,150)
+    town = QLabel("<b>06.</b> Portal to Oriath Docks and give the staff to Bannon", parent=actTenWidget)
+    town.move(0,165)
+    square = QLabel("<b>07.</b> Head to The Ravaged Square and meet Innocence to clear the horns then head into The Canals", parent=actTenWidget)
+    square.move(0,180)
+    canals = QLabel("<b>08.</b> Find The Feeding Trough", parent=actTenWidget)
+    canals.move(0,195)
+    trough = QLabel("<b>09.</b> Find the Altar of Hunger and kill Kitava", parent=actTenWidget) 
+    trough.move(0,210)
+    killed = QLabel("<b>10.</b> Talk to Sin and head to Oriath Docks", parent=actTenWidget) 
+    killed.move(0,225)
+    end = QLabel("<b>11.</b> Talk to Lily to sail to the Karui Shores", parent=actTenWidget) 
+    end.move(0,240)
+    grats = QLabel("<b>12.</b> You have successfully completed the campaign!", parent=actTenWidget)
+    grats.move(0,255)
+    
     
 window.addWidget(mainMenuWidget)
 window.addWidget(actOneWidget)
