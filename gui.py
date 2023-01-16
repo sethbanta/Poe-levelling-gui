@@ -702,7 +702,8 @@ class actNineMenu(QMainWindow):
     lake.move(0,180)
     lakeTwo = QLabel("<b>07.</b> Travel back to The Foothills waypoint and find The Tunnel", parent=actNineWidget)
     lakeTwo.move(0,195)
-    #lab trial 210
+    tunnelTrial = QLabel("<b>07a.</b> Find and solve the Trial of Ascendancy", parent=actNineWidget)
+    tunnelTrial.move(0,210)
     tunnels = QLabel("<b>08.</b> Find The Quarry", parent=actNineWidget)
     tunnels.move(0,225)
     quarryWaypoint = QLabel("<b>08a.</b> Find the waypoint for The Quarry", parent=actNineWidget)
