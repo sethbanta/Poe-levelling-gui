@@ -682,11 +682,16 @@ class actNineMenu(QMainWindow):
     highgate.move(0,30)
     descent = QLabel("<b>03.</b> Find The Vastiri Desert", parent=actNineWidget)
     descent.move(0,45)
-    #waypoint, 60
-    #skill point, storm blade, 75
-    #skill point, highgate -> bottled storm, 90
-    #skill point, clear storm --> oasis, 105
-    #skill point, kill shakari, 120
+    desertWaypoint = QLabel("<b>03a.</b> Find the waypoint for Vastiri Desert", parent=actNineWidget)
+    desertWaypoint.move(0,60)
+    stormblade = QLabel("<b>03b.</b> Find and retrieve the Storm Blade", parent=actNineWidget)
+    stormblade.move(0,75)
+    stormbladeTwo = QLabel("<b>03c.</b> Travel to Highgate to receive the Bottled Storm from Petreus", parent=actNineWidget)
+    stormbladeTwo.move(0,90)
+    storm = QLabel("<b>03d.</b> Travel back to the Vastiri Desert and clear the storm to travel to The Oasis", parent=actNineWidget)
+    storm.move(0,105)
+    shakari = QLabel("<b>03e.</b> Find and kill Shakari", parent=actNineWidget)
+    shakari.move(0,120)
     desert = QLabel("<b>04.</b> Find The Foothills", parent=actNineWidget)
     desert.move(0,135)
     #waypoint, 150
@@ -700,8 +705,10 @@ class actNineMenu(QMainWindow):
     tunnels = QLabel("<b>08.</b> Find The Quarry", parent=actNineWidget)
     tunnels.move(0,225)
     #waypoint, 240
-    #skill point, 255
-    #feather, 270
+    feather = QLabel("<b>08b.</b> Find the Shrine of the Winds", parent=actNineWidget)
+    feather.move(0,255)
+    featherKill = QLabel("<b>08c.</b> Kill Garukhan, Queen of the Winds and take the Sekhema Feather", parent=actNineWidget)
+    featherKill.move(0,270)
     quarry = QLabel("<b>09.</b> Find The Refinery", parent=actNineWidget)
     quarry.move(0,285)
     refinery = QLabel("<b>10.</b> Find and kill General Adus then take the Trarthan Powder", parent=actNineWidget)
