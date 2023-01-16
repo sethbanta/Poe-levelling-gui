@@ -125,6 +125,7 @@ class mainMenu(QMainWindow): #page 1
     button10 = QPushButton(mainMenuWidget)
     button10.setText("Act Ten")
     button10.move(((mainMenuWidget.width() // 2) + (mainMenuWidget.width() // 14) - 66),(mainMenuWidget.height() // 10) + 200)
+    button10.clicked.connect(actTenSwitch)
 
 class actOneMenu(QMainWindow):
     #Set the widget up
