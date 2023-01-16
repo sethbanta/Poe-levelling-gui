@@ -608,12 +608,16 @@ class actEightMenu(QMainWindow):
     cesspool = QLabel("<b>04.</b> Find The Cauldron and kill Doedre", parent=actEightWidget)
     cesspool.move(0,60)
     cesspoolTwo = QLabel("<b>05.</b> Take the outlet and head to The Quay", parent=actEightWidget)
-    #skill point ankh, 75
-    #skill point res site, 90
-    #skill point tol, 105
+    ankh = QLabel("<b>05a.</b> Find the Ankh of Eternity", parent=actEightWidget)
+    ankh.move(0,75)
+    site = QLabel("<b>05b.</b> Find the Ressurection Site", parent=actEightWidget)
+    site.move(0,90)
+    tolman = QLabel("<b>05c.</b> Talk to Clarissa and kill Tolman", parent=actEightWidget)
+    tolman.move(0,105)
     quay = QLabel("<b>06.</b> Find The Grain Gate", parent=actEightWidget)
     quay.move(0,120)
-    #skill point, 135
+    gemling = QLabel("<b>06a.</b> Find and kill the Gemling Legion", parent=actEightWidget)
+    gemling.move(0,135)
     grain = QLabel("<b>07.</b> Find The Imperial Fields", parent=actEightWidget)
     grain.move(0,150)
     #waypoint, 165
@@ -630,23 +634,27 @@ class actEightMenu(QMainWindow):
     bridge = QLabel("<b>13.</b> Find The Lunaris Concourse", parent=actEightWidget)
     bridge.move(0,255)
     #waypoint, 270
-    #skill point, find bath house, 285
-    #skill point, find high gardens, 300
-    #skill point find kill yugul, 315
+    bath = QLabel("<b>13b.</b> Find The Bath House", parent=actEightWidget)
+    bath.move(0,285)
+    #lab trial 300
+    high = QLabel("<b>13d.</b> Find the High Gardens", parent=actEightWidget)
+    high.move(0,315)
+    yugul = QLabel("<b>13e.</b> Find The Pools of Terror and kill Yugul then head back to the Lunaris Concourse Waypoint", parent=actEightWidget)
+    yugul.move(0,330)
     lunarisConcourse = QLabel("<b>14.</b> Find The Lunaris Temple Level 1", parent=actEightWidget)
-    lunarisConcourse.move(0,330)
+    lunarisConcourse.move(0,345)
     lunarisTemple = QLabel("<b>15.</b> Find The Lunaris Temple Level 2", parent=actEightWidget)
-    lunarisTemple.move(0,345)
-    lunarisTempleTwo = QLabel("<b>16.</b> Find and kill Dusk and take the Moon Orb", parent=actEightWidget)
     lunarisTemple.move(0,360)
+    lunarisTempleTwo = QLabel("<b>16.</b> Find and kill Dusk and take the Moon Orb", parent=actEightWidget)
+    lunarisTempleTwo.move(0,375)
     townTwo = QLabel("<b>17.</b> Portal to town and take the waypoint back to The Lunaris Concourse", parent=actEightWidget)
-    townTwo.move(0,375)
+    townTwo.move(0,390)
     lunarisConcourseTwo = QLabel("<b>18.</b> Head to the Harbour Bridge", parent=actEightWidget)
-    lunarisConcourseTwo.move(0,390)
+    lunarisConcourseTwo.move(0,405)
     bridgeTwo = QLabel("<b>19.</b> Find The Sky Shrine and activate the Statue of Sisters", parent=actEightWidget)
-    bridgeTwo.move(0,405)
+    bridgeTwo.move(0,420)
     sisters = QLabel("<b>20.</b> Kill Lunaris and Solaris then head to The Blood Aqueduct", parent=actEightWidget)
-    sisters.move(0,420)
+    sisters.move(0,435)
     
     
     
