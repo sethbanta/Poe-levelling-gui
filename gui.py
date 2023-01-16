@@ -107,6 +107,7 @@ class mainMenu(QMainWindow): #page 1
     button8 = QPushButton(mainMenuWidget)
     button8.setText("Act Eight")
     button8.move(((mainMenuWidget.width() // 2) + (mainMenuWidget.width() // 14) - 66),(mainMenuWidget.height() // 10) + 150)
+    button8.clicked.connect(actEightSwitch)
     
     #Create act nine button
     button9 = QPushButton(mainMenuWidget)
