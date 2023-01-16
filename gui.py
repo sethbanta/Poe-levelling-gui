@@ -734,6 +734,10 @@ class actNineMenu(QMainWindow):
     coreBoss.move(0,420)
     oriath = QLabel("<b>19.</b> Talk to Lily and sail to Oraith Docks", parent=actNineWidget)
     oriath.move(0,435)
+    mainMenu = QPushButton(actNineWidget)
+    mainMenu.setText("Main Menu")
+    mainMenu.move(0,455)
+    mainMenu.clicked.connect(mainMenuSwitch)
     
     
 window.addWidget(mainMenuWidget)
