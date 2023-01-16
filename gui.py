@@ -694,7 +694,8 @@ class actNineMenu(QMainWindow):
     shakari.move(0,120)
     desert = QLabel("<b>04.</b> Find The Foothills", parent=actNineWidget)
     desert.move(0,135)
-    #waypoint, 150
+    foothillsWaypoint = QLabel("<b>04a.</b> Find the waypoint for The Foothills", parent=actNineWidget)
+    foothillsWaypoint.move(0,150)
     foothills = QLabel("<b>05.</b> Find The Boiling Lake", parent=actNineWidget)
     foothills.move(0,165)
     lake = QLabel("<b>06.</b> Find and kill The Basilisk and take the Basilisk Acid", parent=actNineWidget)
@@ -704,7 +705,8 @@ class actNineMenu(QMainWindow):
     #lab trial 210
     tunnels = QLabel("<b>08.</b> Find The Quarry", parent=actNineWidget)
     tunnels.move(0,225)
-    #waypoint, 240
+    quarryWaypoint = QLabel("<b>08a.</b> Find the waypoint for The Quarry", parent=actNineWidget)
+    quarryWaypoint.move(0,240)
     feather = QLabel("<b>08b.</b> Find the Shrine of the Winds", parent=actNineWidget)
     feather.move(0,255)
     featherKill = QLabel("<b>08c.</b> Kill Garukhan, Queen of the Winds and take the Sekhema Feather", parent=actNineWidget)
