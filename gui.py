@@ -757,9 +757,12 @@ class actTenMenu(QMainWindow):
     apex = QLabel("<b>02.</b> Find The Ravaged Square", parent=actTenWidget)
     apex.move(0,30)
     #waypoint 45
-    #blocks 60
-    #vilenta 75
-    #back to wp then ossuary 90
+    blocks = QLabel("<b>02b.</b> Find The Control Blocks", parent=actTenWidget) 
+    blocks.move(0,60)
+    vilenta = QLabel("<b>02c.</b> Find and kill Vilenta", parent=actTenWidget) 
+    vilenta.move(0,75)
+    ossuary = QLabel("<b>02d.</b> Head back to The Ravaged Square waypoint and enter The Ossuary", parent=actTenWidget) 
+    ossuary.move(0,90)
     #trial 105
     ravaged = QLabel("<b>03.</b> Find The Torched Courts", parent=actTenWidget) 
     ravaged.move(0,120)
