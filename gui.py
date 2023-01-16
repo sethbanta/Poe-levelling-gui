@@ -786,6 +786,10 @@ class actTenMenu(QMainWindow):
     end.move(0,240)
     grats = QLabel("<b>12.</b> You have successfully completed the campaign!", parent=actTenWidget)
     grats.move(0,255)
+    mainMenu = QPushButton(actTenWidget)
+    mainMenu.setText("Main Menu")
+    mainMenu.move(0,275)
+    mainMenu.clicked.connect(mainMenuSwitch)
     
     
 window.addWidget(mainMenuWidget)
