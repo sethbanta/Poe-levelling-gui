@@ -56,6 +56,9 @@ def actEightSwitch(event):
     
 def actNineSwitch(event):
     window.setCurrentIndex(9)
+    
+def actTenSwitch(event):
+    window.setCurrentIndex(10)
 
 class mainMenu(QMainWindow): #page 1
     #Create a label to fill in the window
@@ -738,6 +741,10 @@ class actNineMenu(QMainWindow):
     mainMenu.setText("Main Menu")
     mainMenu.move(0,455)
     mainMenu.clicked.connect(mainMenuSwitch)
+    actTen = QPushButton(actNineWidget)
+    actTen.setText("Act Ten")
+    actTen.move(100,455)
+    actTen.clicked.connect(actTenSwitch)
     
     
 window.addWidget(mainMenuWidget)
@@ -750,6 +757,7 @@ window.addWidget(actSixWidget)
 window.addWidget(actSevenWidget)
 window.addWidget(actEightWidget)
 window.addWidget(actNineWidget)
+window.addWidget(actTenWidget)
 window.setCurrentWidget(mainMenuWidget)
 #Show the window
 sys.exit(app.exec())
