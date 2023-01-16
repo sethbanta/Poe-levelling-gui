@@ -764,7 +764,8 @@ class actTenMenu(QMainWindow):
     vilenta.move(0,75)
     ossuary = QLabel("<b>02d.</b> Head back to The Ravaged Square waypoint and enter The Ossuary", parent=actTenWidget) 
     ossuary.move(0,90)
-    #trial 105
+    trial = QLabel("<b>02e.</b> Find and solve the Trial of Ascendancy", parent=actTenWidget) 
+    trial.move(0,105)
     ravaged = QLabel("<b>03.</b> Find The Torched Courts", parent=actTenWidget) 
     ravaged.move(0,120)
     torched = QLabel("<b>04.</b> Find The Desecrated Chambers", parent=actTenWidget) 
