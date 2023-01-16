@@ -638,7 +638,8 @@ class actEightMenu(QMainWindow):
     lunarisWp.move(0,270)
     bath = QLabel("<b>13b.</b> Find The Bath House", parent=actEightWidget)
     bath.move(0,285)
-    #lab trial 300
+    lab = QLabel("<b>13c.</b> Find and solve the Trial of Ascendancy", parent=actEightWidget)
+    lab.move(0,300)
     high = QLabel("<b>13d.</b> Find the High Gardens", parent=actEightWidget)
     high.move(0,315)
     yugul = QLabel("<b>13e.</b> Find The Pools of Terror and kill Yugul then head back to the Lunaris Concourse Waypoint", parent=actEightWidget)
