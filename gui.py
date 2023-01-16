@@ -659,6 +659,10 @@ class actEightMenu(QMainWindow):
     bridgeTwo.move(0,420)
     sisters = QLabel("<b>20.</b> Kill Lunaris and Solaris then head to The Blood Aqueduct", parent=actEightWidget)
     sisters.move(0,435)
+    mainMenu = QPushButton(actEightWidget)
+    mainMenu.setText("Main Menu")
+    mainMenu.move(0,455)
+    mainMenu.clicked.connect(mainMenuSwitch)
     
     
     
