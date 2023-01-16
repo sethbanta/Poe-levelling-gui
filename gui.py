@@ -620,7 +620,8 @@ class actEightMenu(QMainWindow):
     gemling.move(0,135)
     grain = QLabel("<b>07.</b> Find The Imperial Fields", parent=actEightWidget)
     grain.move(0,150)
-    #waypoint, 165
+    fieldsWp = QLabel("<b>07a.</b> Find The Imerpial Field Waypoint", parent=actEightWidget)
+    fieldsWp.move(0,165)
     imperial = QLabel("<b>08.</b> Find The Solaris Temple Level 1", parent=actEightWidget)
     imperial.move(0,180)
     solarisOne = QLabel("<b>09.</b> Find The Solaris Temple Level 2", parent=actEightWidget)
@@ -633,7 +634,8 @@ class actEightMenu(QMainWindow):
     imperialTwo.move(0,240)
     bridge = QLabel("<b>13.</b> Find The Lunaris Concourse", parent=actEightWidget)
     bridge.move(0,255)
-    #waypoint, 270
+    lunarisWp = QLabel("<b>13a.</b> Find The Lunaris Concourse Waypoint", parent=actEightWidget)
+    lunarisWp.move(0,270)
     bath = QLabel("<b>13b.</b> Find The Bath House", parent=actEightWidget)
     bath.move(0,285)
     #lab trial 300
